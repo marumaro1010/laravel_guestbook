@@ -1,10 +1,14 @@
 @extends('master')
 
 @section('content')
-<div class="container">
+    @{{ message }}
+<div>
     <h1 text-align="center">My GuestBook Board</h1>
-    <!--我要留言 op-->
-    <form id="form1">
+    <!--我要留言-->
+    <add-component></add-component>
+    <!--留言區-->
+    <list-component></list-component>
+    {{-- <form id="form1">
         <table class="table table-bordered">
             <tbody>
                 <tr>
@@ -30,10 +34,10 @@
                 </tr>
             </tbody>
         </table>
-    </form>
+    </form> --}}
     <!--我要留言 ed-->
     <!--留言區 op-->
-    <table class="table table-bordered">
+    {{-- <table class="table table-bordered">
         <tbody>
             <tr>
                 <td style="text-align:left">
@@ -46,10 +50,14 @@
                 </td>
             </tr>
         </tbody>
-    </table>
+    </table> --}}
     <!--留言區 ed-->
 </div>
 @endsection
 
-@section('modal')
+{{-- @section('modal')
+@endsection --}}
+
+@section('js')
+<script src="{{asset('js/guestbook.js')}}"></script>
 @endsection
