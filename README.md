@@ -1,2 +1,1 @@
- docker build . -t zoe_image
- docker run -it zoe_image  /bin/sh
+版本嘗試升級中...
